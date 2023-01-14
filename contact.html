@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>contact me</title>
+</head>
+<body>
+    <h3>CONTACT ME</h3>
+    <ul> 
+      <li><strong><a href =https://www.linkedin.com/in/ankush-singh-a19581232>Linkdin</a></strong>
+      </li>
+      
+      <strong> <li> <a href =https://github.com/ankush788 > git hub</a></li></strong>
+      
+      <li><strong> G-mail - </strong>
+        
+        ankushsingh_se21a13_54@dtu.ac.in
+        <br>
+        ankushsingh201501@gmail.com
+        </li>
+    </ul> 
+
+    <!-- The action attribute defines the action to be performed when the form is submitted.
+
+    The target attribute specifies where to display the response that is received after submitting the form.
+
+   The method attribute specifies the HTTP method to be used when submitting the form data.
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+
+The default HTTP method when submitting form data is GET.
+
+ value is use for by dfalut value present in that box  -->
+ <br>
+ 
+ <h3>MAIL ME</h3>
+    <form  action = "mailto:ankushsingh_se21a13_54@dtu.ac.in" method="post" enctype="text/plain"> 
+
+        <label > Enter your Name: </label>
+        <br>
+        <input type ="text" value = " "/>
+    <br>
+        <label >Enter your email:</label>
+        <br>
+        <input type ="email" value="@gmail.com"/>
+        
+        <br> <br>
+        <label> Enter your message for me: </label>
+        <br>
+        <!-- text area is use for large text input and it can change it length according to input , 'rows' , 'cols' attribut
+        is use to fix it's intial size 
+         'enctype' it is use for tell in which form you want to see user submitted data ex- plain/text(plain text ) etc.-->
+        <textarea name = "message" rows ="0" cols ="20" ></textarea>
+        <br>
+      <label><strong>Are you a Hiring Recuiter?</strong></label> 
+      <br>
+      <!-- 1)radio me aagr choice wala chayiye to 'name' attribute use karo and dono radio me same value chize hi dalna 
+     example in  this case 'choice'
+   2) &nbsp; for spaceing html 
+    3)   different "type" = text , submit ,file ,date ,radio, range (commonly used) 
+    4) "name" is use to tell when data get to developer ki what type of data ex:- it is a name , phone no. etc.
+      5) mailto:"email addres" = you to connect with mail our email as sender  -->
+      YES<input type ="radio" name ="choice" />
+     &nbsp; NO <input type ="radio" name ="choice" />
+     <br>
+      <label> you want to share the detail </label>
+        <input type ="checkbox" /> 
+        <br>
+        <br>
+     <input type ="submit" value ="submit"/>
+    </form>
+</body>
+</html>
